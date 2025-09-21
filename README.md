@@ -26,16 +26,25 @@ Implemented AM and SSB demodulation; validated with frequency sweeps and sideban
 Finalize reset debouncing, expose Local Oscillator tuning via rotary encoder, and reduce memory by replacing long FIR delays with register lines where feasible.
 
 
-## Repository layout
+### Repository layout
 - `rtl/` — synthesizable IP (I²S Rx/Tx, clock divider, FIR, arithmetic units)
 - `top/` — bring-up / integration top-levels (e.g., `Audio_Passthrough.sv`)
 - `sim/` — testbenches and ModelSim scripts (`.do`)
 - `quartus/` — project files (`.qsf`, constraints)
 - `docs/` — design notes and images
 
-## Quickstart
+### Quickstart
 
-### Sim (ModelSim/Questa)
+#### Sim (ModelSim/Questa)
 ```tcl
 # From sim/modelsim/
 do Audio_Passthrough.do
+```
+
+### 👥 Contributors
+
+- **Jinho Choi**
+- **Jason Zhang**
+- **Sebastian Sergnese**
+
+---
