@@ -1,0 +1,25 @@
+# Quartus
+db/
+incremental_db/
+output_files/
+simulation/
+*.rpt
+*.smsg
+*.qws
+*.sopcinfo
+
+# ModelSim / Questa
+work/
+transcript
+vsim.wlf
+*.log
+*.vcd
+*.wlf
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
