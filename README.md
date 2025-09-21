@@ -2,7 +2,7 @@
 
 An FPGA-based demodulator for the FLRTRX SDR that samples I/Q, down-converts a 10 kHz IF to baseband, and outputs line-level audio. Supports AM and single-sideband (SSB) detection, with a clean I/O: RX I/Q in, audio out via DAC.
 
-## Key highlights
+## Overview  
 
 ### 1. Milestone 1 — Clock Divider + I²S Receiver
 Derived 24.576 MHz MCLK from 50 MHz via PLL; generated synchronized LRCLK (= MCLK/512) and SCLK (= MCLK/8) in a clock divider; implemented I²S Rx/Tx with frame-valid handoff and verified passthrough on the PMOD-I2S2.
@@ -31,7 +31,7 @@ Finalize reset debouncing, expose Local Oscillator tuning via rotary encoder, an
 - `top/` — bring-up / integration top-levels (e.g., `Audio_Passthrough.sv`)
 - `sim/` — testbenches and ModelSim scripts (`.do`)
 - `quartus/` — project files (`.qsf`, constraints)
-- `docs/` — design notes and images
+- `docs/` — design requirements
 
 ### Quickstart
 
